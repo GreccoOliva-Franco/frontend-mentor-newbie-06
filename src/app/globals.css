@@ -47,8 +47,10 @@
   --color-bg: var(--Blue-black);
 
   --color-card-bg: var(--Blue-darkest);
+  --color-card-bg-accent: var(--Cyan);
   --color-card-title: var(--color-white);
-  --color-card-paragraph: var(--Blue);
+  --color-card-text: var(--Blue);
+  --color-card-text-accent: var(--Cyan);
   
   --color-separator: var(--Blue-darker);
 }
@@ -128,13 +130,4 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
 }

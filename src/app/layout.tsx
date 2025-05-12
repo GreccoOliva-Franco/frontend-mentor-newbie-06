@@ -19,7 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("antialiased", font.className)}>{children}</body>
+      <body
+        className={cn(
+          "antialiased",
+          "flex flex-col min-h-screen min-w-screen",
+          font.className
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
